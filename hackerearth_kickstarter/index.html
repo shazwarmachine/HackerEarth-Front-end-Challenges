@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script type="text/javascript" src="js/index.js"></script>
+  <link rel="stylesheet" type="text/css" href="style/main.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="container  " id="ty">
+  <div class=" form ">
+      <div class="input-field inp  " >
+        <input type="text" id="SearchBox">
+        <ul  id="result"></ul>
+        <label for="SearchBox">Search for Games</label>
+
+      </div>
+      <div id="submit" class="button ">  <a href="#" class=" waves-effect btn " id="searchBtn" >Search</a>
+
+      </div>
+
+  </div>
+  <div class="filter">
+    <div class="filter1">
+      <h4><b>Filter Using Location </b></h4>
+    </div>
+    <div class="filter2 input-feild">
+      <select  id="sort_loc" >
+        <option value="" >Location</option>
+        <option value="Washington, DC">Washington, DC</option>
+        <option value="Los Angeles, CA">Los Angeles, CA</option>
+        <option value="Brooklyn, NY">Brooklyn, NY</option>
+        <option value="Kigali, Rwanda">Kigali, Rwanda</option>
+        <option value="Miami, F">Miami, F</option>
+        <option value="Wilmington, DE">Wilmington, DE</option>
+        <option value="Cannon Ball, ND">Cannon Ball, ND</option>
+        <option value="San Francisco, CA">San Francisco, CA</option>
+        <option value="Columbus, OH">Columbus, OH</option>
+        <option value="New York, NY">New York, NY</option>
+        <option value="Phoenix, AZ">Phoenix, AZ</option>
+        <option value="Venice, Los Angeles, CA">Venice, Los Angeles, CA</option>
+        <option value="Paris, France">Paris, France</option>
+        <option value="Miami Beach, FL">Miami Beach, FL</option>
+        <option value="Sheffield, UK">Sheffield, UK</option>
+        <option value="Chicago, IL">Chicago, IL</option>
+        <option value="Sydney, AU">Sydney, AU</option>
+        <option value="London, UK">London, UK</option>
+        <option value="Toronto, Canada">Toronto, Canada</option>
+        <option value="Minneapolis, MN">Minneapolis, MN</option>
+        <option value="Seattle, WA">Seattle, WA</option>
+        <option value="Lausanne, Switzerland">Lausanne, Switzerland</option>
+        <option value="Hanoi, Viet Nam">Hanoi, Viet Nam</option>
+        <option value="Wales, UK">Wales, UK</option>
+        <option value="Wroclaw, Poland">Wroclaw, Poland</option>
+        <option value="Jackson, WY<">Jackson, WY</option>
+        <option value="Bend, OR">Bend, OR</option>
+        <option value="Manhattan, NY">Manhattan, NY</option>
+        <option value="Edmonton, Canada">Edmonton, Canada</option>
+        <option value="Gloucester, MA">Gloucester, MA</option>
+        <option value="Gardena, CA">Gardena, CA</option>
+        <option value="Atlanta, GA">Atlanta, GA</option>
+        <option value="Barcelona, Spain">Barcelona, Spain</option>
+        <option value="Oxford, UK">Oxford, UK</option>
+        <option value="Arvada, CO">Arvada, CO</option>
+        <option value="Salt Lake City, UT">Salt Lake City, UT</option>
+        <option value="Copenhagen, Denmark">Copenhagen, Denmark</option>
+        <option value="Landenberg, PA">Landenberg, PA</option>
+        <option value="Grand Rapids, MI">Grand Rapids, MI</option>
+        <option value="Vancouver, Canada">Vancouver, Canada</option>
+        <option value="Melbourne, AU">Melbourne, AU</option>
+        <option value="Waterloo, Canada">Waterloo, Canada</option>
+        <option value="Dusseldorf, Germany">Dusseldorf, Germany</option>
+        <option value="Ljubljana, Slovenia">Ljubljana, Slovenia</option>
+        <option value="Cambridge, MA">Cambridge, MA</option>
+        <option value="Aylesbury, UK">Aylesbury, UK</option>
+        <option value="Philadelphia, PA">Philadelphia, PA</option>
+        <option value="Birmingham, AL">Birmingham, AL</option>
+        <option value="Bristol, RI">Bristol, RI</option>
+        <option value="Wolverhampton, UK">Wolverhampton, UK</option>
+        <option value="Houston, TX">Houston, TX</option>
+        <option value="St. Louis, MO">St. Louis, MO</option>
+        <option value="Suffern, NY">Suffern, NY</option>
+        <option value="Lansing, MI">Lansing, MI</option>
+        <option value="Beijing, China">Beijing, China</option>
+        <option value="Southampton, UK">Southampton, UK</option>
+
+      </select>
+
+    </div>
+  </div>
+  <div class="op0">
+            <div class="op input-field ">
+                  <select  id="sort" >
+                    <option value="" selected>Select</option>
+                    <option value="ascending">Ascending</option>
+                    <option value="descending">Descending</option>
+                  </select>
+                  <label for="">Percentage.funded</label>
+            </div>
+          <div class="op1 input-field ">
+                  <select  id="sort_t" >
+                    <option value="" selected>Select</option>
+                    <option value="ascending">Ascending</option>
+                    <option value="descending">Descending</option>
+                  </select>
+                  <label for="">End.Time</label>
+          </div>
+</div>
+<!--<div id="platform">
+
+  <form id="my_radio_box" >
+  <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">Playstation 3</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2">PC</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+  <label class="form-check-label" for="inlineRadio3">XBOX 360</label>
+</div>
+</form>-->
+
+
+<div id="output"></div>
+</div>
+</body>
+</html>
